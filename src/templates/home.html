@@ -1,0 +1,35 @@
+{% extends "layout.html"%}
+
+{% block content %}
+<div class="jumbotron">
+    <h3 class="display-5">Mecánica de Materiales</h3>
+    <hr class="my-4">
+    <h1 class="display-4">Temas</h1>
+    <p class="lead">Podemos encontrar temas interesantes de la rama de Mecánica de materiales como:</p>
+    <p class="lead">1.- Esfuerzo</p>
+    <p class="lead">2.- Deformaciones</p>
+    <p class="lead">3.- Columnas</p>
+    <hr class="my-4">
+  </div>
+  <div class="jumbotron">
+    <h1 class="display-4">Calculadora</h1>
+    <p class="lead">Tambien usted podra encontrar una calculadora de los temas mencionados anteriormente de Mecánica de Materiales</p>
+    <hr class="my-4">
+    <p>Esta herramienta te ayudara a comprobar algunos resultados como tambien te brindara información sober los temas</p>
+    <p>Los temas a tratar son:</p>
+    <a class="btn btn-primary btn-lg" href="{{  url_for('esfuerzo') }}" role="button">Esfuerzos</a>
+    <p></p>
+    <a class="btn btn-primary btn-lg" href="{{  url_for('deformacion') }}" role="button">Deformaciones</a>
+    <p></p>
+    <a class="btn btn-primary btn-lg" href="{{  url_for('columnas') }}" role="button">Columnas</a>
+    <p></p>
+    <a class="btn btn-primary btn-lg" href="{{  url_for('about') }}" role="button">Links</a>
+  </div>
+    <div class="jumbotron">
+    <h1 class="display-4"> Información </h1>
+    <hr class="my-4">
+    <p>Elaborado por Alex C.O.  </p>
+    <p>Puede comunicarse conmigo al siguiente correo</p>
+    <p>alecesar2001@gmail.com</p>
+  </div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'layout.html'%}
+{% block content%}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Mecanica de Materiales</h1>
+      <hr class="my-4">
+      <p class="lead">Esfuerzos de una esfera y de un cilindro</p>
+      </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Contenido a Tratar</h1>
+    <hr class="my-4">
+    <p class="lead">Selección de materiales en función a parámetros y esfuerzos que soporta</p>
+    <p></p>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Esfuerzos en recipientes de pared delgada a presión</h1>
+    <hr class="my-4">
+    <p class="lead" style="text-align: justify;" >Los recipientes de pared delgada constituyen una aplicación importante del análisis de esfuerzo plano. Como sus paredes oponen poca resistencia a la flexión, 
+      puede suponerse que las fuerzas internas ejercidas sobre una parte
+      de la pared son tangentes a la superficie del recipiente. Los esfuerzos resultantes en un elemento de pared estarán contenidos en un plano
+      tangente a la superficie del recipiente.
+      El análisis de esfuerzos en recipientes de pared delgada se limitará a los dos tipos que se encuentran con
+      mayor frecuencia: recipientes cilíndricos y esféricos.</p>
+      <body>
+      <center><img src="https://etcfunsafe.com/wp-content/uploads/2017/06/curso-asme-viii-diseno-recipientes-a-presion-iii-etc-funsafe-1024x762.jpg" width="300px"  ></center>
+      </body>   
+    <p></p>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Recipiente Esferica</h1>
+    <hr class="my-4">
+    <p class="lead">Ejemplo</p>
+    <p></p>
+    <p style="text-align: justify;">Una pelota de baloncesto tiene 300 mm de diámetro exterior y 3 mm de
+      espesor de pared. Determine el esfuerzo normal en la pared cuando ésta se
+      encuentra inflada a una presión manométrica de 120 kPa.</p>
+    <p>Datos</p>
+    <p>P=120Kpa</p>
+    <p>t=3mm</p>
+    <center><p>Solución</p>
+    <p>r=R-3</p>
+    <p>r=150-3</p>
+    <p>r=147mm</p>
+    <p>Calculo del esfuerzo normal </p>
+    <p>φ=(P*r)/2t</p>
+    <p>φ=(120Kpa*147mm)/(2*3mm)</p>
+    <p>φ=29.4Mpa</p></center>
+    <p></p>
+    <p>Pudes comprobar el resultado en:</p>
+    <a href="https://repl.it/@6AlexC9/EsfuerzoEsfera">
+      CODIGO_ESFUERZOS_ESFERA
+    </a>
+  </div>
+</div>
+{% endblock %}

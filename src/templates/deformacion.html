@@ -1,0 +1,76 @@
+{% extends 'layout.html'%}
+{% block content%}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Mecanica de Materiales</h1>
+      <hr class="my-4">
+      <center><p class="lead" >Deformaciones de una varilla<p> </center>
+    </div>
+  </div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Diagrama esfuerzo-deformación</h1>
+      <hr class="my-4">
+      <p class='lead' style="text-align: justify;">Los materiales dúctiles como el acero estructural, asi como muchas aleciones
+      de otros metales, se caracterizanpor su capacidad de fluir a temperaturas normales. Al someterse la probeta a una carga que aumenta, su longitud
+     se incrementa primero linealmente con la carga y a una tasa muy lenta. Asi, la porcion inicial del  diagrama esfuerzo-deformación es una linea recta 
+     con una pendiente pronunciada. No obstante, después de alcanzar un calor critico Sy, del esfuerzo, la probeta experimenta una gran deformación con un incremente
+     relativamente pequeño de la carga aplicada. </p>
+     <body>
+    <center><img src="https://player.slideplayer.es/97/16414106/data/images/img52.jpg" width="200px"  >
+      <img src="https://player.slideplayer.es/97/16414106/data/images/img53.jpg" width="550px"  ></center>
+     </body>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Diagrama esfuerzo-deformación</h1>
+    <hr class="my-4">
+    <p>Para el hierro y para diversos grados de acero</p>
+    <hr class="my-4">
+    <p class='lead' style="text-align: justify;">Algunas de las propiedades físicas de los metales estructurales, 
+      como resistencia, ductilidad y resistencia a la corrosión, pueden verse muy afectadas debido a causas como la aleación, el tratamiento termico,
+     y el proceso de manufactura del empleado. Por ejemplo, se observa en los diagramas de esfeurzo deformación del hierro puro y de tres diferentes grados
+     de acero que grandes variacones en la resistencia a la fluencia, la resistencia última y la deformación unitaria final (ductilidad) existen entre estos
+     cuatro metales. Todos ellos, sin embargo, poseen el mismo módulo de elasticidad; en otras palabras, su "rigidez".</p>
+   <body>
+  <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6OPyi3qiBsTyJxWKx8piQ60kviO-ptqQkaw&usqp=CAU" width= "300px"  >
+  </center>
+   </body>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Deformación</h1>
+    <hr class="my-4">
+    <p>Ejemplo</p>
+    <hr class="my-4">
+    <p class='lead' style="text-align: justify;">Un alambre de acero de 60m de largo se sujeta a una carga de tensión de 6kN. Si se sabe que E=200 GPa y que la longitud
+    del alambre aumenta 48mm,determine:</p>
+    <p>a)El diámetro mínimo que puede seleccionarse para el alambre</p>
+    <p>b)El esfuerzo normal correspondiente</p>
+    <p>Datos</p>
+    <p>E=200GPa</p>
+    <p>φ=48mm</p>
+    <p>P=6kN</p>
+    <center><p>Solución </p>
+    <p>a)El diámetro mínimo que puede seleccionarse para el alambre</p>
+    <p>S=(P*L)/A*E</p>
+    <p>48*10^-3M=[(6*10^3N)(60m)]/[((pi*d^2)/4)*200*10^9 N/m^2]</p>
+    <p>d=6.91*10^-3m</p>
+    <p>d=6.91mm</p>
+    <p>b)El esfuerzo normal correspondiente</p>
+    <p>φ=P/A</p>
+    <p>φ=6000N/((pi*d^2)/4)</p>
+    <p>φ=6000N/((pi*(6.91*10^-3)^2)/4)</p>
+    <p>φ=160Mpa</p>
+    </center>
+    <p></p>
+    <p>Pudes comprobar el resultado en:</p>
+    <a href="https://repl.it/@6AlexC9/Deformaciones">
+      CODIGO_DEFORMACIONES
+    </a>
+  </div>
+</div>
+{% endblock %}
